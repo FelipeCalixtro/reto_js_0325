@@ -9,71 +9,44 @@
 </head>
 <body>
     
-    <section class="top"></section>
+    <div class="top"></div>
 
     <header>
         <div class="container">
-            <h1>Paises</h1>
+            <div class="flex">
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/7871/7871576.png" alt="">
+                <h1>Paises del mundo</h1>
+            </div>
         </div>
     </header>
 
     <section class="main_content">
         <div class="container">
-            <h2>Datos de la API</h2>
-
             <div id="resultado" class="grid-content">
-                <div class="card">
-                    <div class="head">
-                        <img src="https://flagcdn.com/gs.svg" alt="">
-                        <h3>Nueva Zelanda</h3>
-                        <span class="label">PER</span>
-                    </div>
-                    <div class="body">
-                        <div>
-                            <span>
-                                <i class="capital"></i>
-                                Capital
-                            </span>
-                            <p>Lima</p>
-                        </div>
-                        <div>
-                            <span>
-                                <i class="lenguaje"></i>
-                                Lenguaje
-                            </span>
-                            <p>Español</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div>
-                            <span>
-                                <i class="moneda"></i>
-                                Moneda
-                            </span>
-                            <p>Nuevo sol <span class="label">S/</span></p>
-                        </div>
-                        <button class="btn" onclick="mostrarModal(${JSON.stringify(pais).replace(/"/g, "&quot;")})">Ver más</button>
-                    </div>
-                </div>
+                
             </div>
 
-            <div class="text-center">
-                <button id="cargarMas">Cargar más</button>
+            <div class="div-center">
+                <button id="cargarMas" class="btn">Cargar más</button>
             </div>
         </div>
     </section>
 
     <!-- Modal -->
     <div id="modal" class="modal">
+        <button class="modal-close" onclick="cerrarModal()">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M36.1805 0.847598C35.9208 0.587432 35.6124 0.381027 35.2729 0.240196C34.9334 0.0993657 34.5695 0.0268752 34.2019 0.0268752C33.8344 0.0268752 33.4704 0.0993657 33.1309 0.240196C32.7914 0.381027 32.483 0.587432 32.2234 0.847598L18.5 14.5429L4.77659 0.819533C4.51677 0.559709 4.20831 0.353605 3.86883 0.212989C3.52936 0.0723733 3.16551 2.73769e-09 2.79806 0C2.43062 -2.73769e-09 2.06677 0.0723733 1.72729 0.212989C1.38781 0.353605 1.07936 0.559709 0.819533 0.819533C0.559709 1.07936 0.353605 1.38781 0.212989 1.72729C0.0723733 2.06677 -2.73769e-09 2.43062 0 2.79806C2.73769e-09 3.16551 0.0723733 3.52936 0.212989 3.86883C0.353605 4.20831 0.559709 4.51677 0.819533 4.77659L14.5429 18.5L0.819533 32.2234C0.559709 32.4832 0.353605 32.7917 0.212989 33.1312C0.0723733 33.4706 0 33.8345 0 34.2019C0 34.5694 0.0723733 34.9332 0.212989 35.2727C0.353605 35.6122 0.559709 35.9206 0.819533 36.1805C1.07936 36.4403 1.38781 36.6464 1.72729 36.787C2.06677 36.9276 2.43062 37 2.79806 37C3.16551 37 3.52936 36.9276 3.86883 36.787C4.20831 36.6464 4.51677 36.4403 4.77659 36.1805L18.5 22.4571L32.2234 36.1805C32.4832 36.4403 32.7917 36.6464 33.1312 36.787C33.4706 36.9276 33.8345 37 34.2019 37C34.5694 37 34.9332 36.9276 35.2727 36.787C35.6122 36.6464 35.9206 36.4403 36.1805 36.1805C36.4403 35.9206 36.6464 35.6122 36.787 35.2727C36.9276 34.9332 37 34.5694 37 34.2019C37 33.8345 36.9276 33.4706 36.787 33.1312C36.6464 32.7917 36.4403 32.4832 36.1805 32.2234L22.4571 18.5L36.1805 4.77659C37.2469 3.71015 37.2469 1.91404 36.1805 0.847598Z" fill="white"/>
+            </svg>
+        </button>
         <div class="modal-content">
-            <span class="close">&times;</span>
             <div id="modal-body"></div>
         </div>
     </div>
 
     <footer>
         <div class="container">
-
+            <div class="copi">© Copyright Felipe Calixtro - 2025</div>
         </div>
     </footer>
 
