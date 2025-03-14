@@ -1,0 +1,24 @@
+/*==============  GENERAL  ===============*/
+*{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/*==============  HEADER  ===============*/
+
+
+/*==============  MAIN CONTENT  ===============*/
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.card{
+    padding: 15px;
+    border-radius: 15px;
+}

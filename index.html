@@ -10,13 +10,73 @@
 <body>
     
     <section class="top"></section>
-    <header></header>
-    <section class="content">
-        <div class="main_content">
 
+    <header>
+        <div class="container">
+            <h1>Paises</h1>
+        </div>
+    </header>
+
+    <section class="main_content">
+        <div class="container">
+            <h2>Datos de la API</h2>
+
+            <div id="resultado" class="grid-content">
+                <div class="card">
+                    <div class="head">
+                        <img src="https://flagcdn.com/gs.svg" alt="">
+                        <h3>Nueva Zelanda</h3>
+                        <span class="label">PER</span>
+                    </div>
+                    <div class="body">
+                        <div>
+                            <span>
+                                <i class="capital"></i>
+                                Capital
+                            </span>
+                            <p>Lima</p>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="lenguaje"></i>
+                                Lenguaje
+                            </span>
+                            <p>Español</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <span>
+                                <i class="moneda"></i>
+                                Moneda
+                            </span>
+                            <p>Nuevo sol <span class="label">S/</span></p>
+                        </div>
+                        <button class="btn" onclick="mostrarModal(${JSON.stringify(pais).replace(/"/g, "&quot;")})">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button id="cargarMas">Cargar más</button>
+            </div>
         </div>
     </section>
-    <footer></footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
     <button></button>
 
 
